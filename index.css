@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.layout {
+  height: 100vh;
+  background-color: #29292f;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas:
+    "sidepane content"
+    "sidepane content";
+  grid-gap: 2rem;
+}
+
+.sidepane {
+  background-color: #17171a;
+  border: 1px solid #565664;
+  grid-area: sidepane;
+}
+
+.content {
+  grid-area: content;
+  background-color: #1d1d21;
+  border-radius: 5px;
+  box-shadow: gray;
+}
+.material-color {
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+}
