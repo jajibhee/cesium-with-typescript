@@ -8,7 +8,7 @@ type Props = {
 };
 
 const MaterialItem = ({ data }: Props) => (
-  <Link href={`/materials/${data.id}`} as={`/users/${data.id}`}>
+  <Link href={`/materials/${data.id}`} as={`/materials/${data.id}`}>
     <Material />
   </Link>
 );

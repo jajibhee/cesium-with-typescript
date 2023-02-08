@@ -1,6 +1,7 @@
 import React from "react";
 
 const Content = () => {
+  // render content based on ID...
   return (
     <div className="content">
       <div className="flex">

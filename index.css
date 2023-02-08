@@ -2,15 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+main {
+  background-color: #29292f;
+  padding: 2rem 3rem;
+}
 .layout {
   height: 100vh;
-  background-color: #29292f;
   display: grid;
+  column-gap: 3rem;
   grid-template-columns: 300px 1fr;
   grid-template-areas:
     "sidepane content"
     "sidepane content";
-  grid-gap: 2rem;
 }
 
 .sidepane {
