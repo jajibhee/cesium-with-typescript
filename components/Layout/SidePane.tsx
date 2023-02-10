@@ -1,10 +1,14 @@
 import React from "react";
+import MaterialsPage from "../../pages/materials";
 import Material from "../Materials/Material";
+import MaterialItem from "../Materials/MaterialItem";
 
-const SidePane = () => {
+const SidePane = ({ items }) => {
   return (
     <div className="sidepane">
-      <Material />
+      {items?.map((item) => (
+        <MaterialItem key={item?.id} data={item} />
+      ))}
     </div>
   );
 };

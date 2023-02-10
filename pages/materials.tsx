@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Materials } from "../interfaces";
 
 import MaterialItem from "../components/Materials/MaterialItem";
+import Content from "../components/Layout/Content";
 
 type MaterialsProps = {
   items: Materials[];
@@ -10,9 +11,7 @@ type MaterialsProps = {
 const MaterialsPage: React.FC<MaterialsProps> = ({ items }) => {
   return (
     <div>
-      {items?.map((item) => (
-        <MaterialItem key={item.id} data={item} />
-      ))}
+      <Content />
     </div>
   );
 };

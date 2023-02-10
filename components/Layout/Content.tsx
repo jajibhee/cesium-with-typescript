@@ -3,33 +3,32 @@ import React from "react";
 const Content = () => {
   // render content based on ID...
   return (
-    <div className="content">
-      <div className="flex">
-        <label>
-          {" "}
-          Name
+    <div className="content-materials">
+      <div className="label-input">
+        <div className="flex flex-col">
+          <label>Name</label>
           <input type="name" />
-        </label>
-        <p>Color</p>
+        </div>
+        <div>
+          <label className="flex ">Color</label>
+          <div className={`material-color bg-green-500`}></div>
+        </div>
       </div>
-      <div className="flex">
-        <label>
-          {" "}
-          Volume (m3)
+      <div className="label-input">
+        <div className="flex flex-col">
+          <label>Volume (m3)</label>
           <input type="number" />
-        </label>
-        <label>
-          {" "}
-          Cost (USD per m3)
+        </div>
+        <div className="flex flex-col">
+          <label>Cost (USD per m3)</label>
           <input type="number" />
-        </label>
+        </div>
       </div>
-      <div className="flex">
-        <label>
-          {" "}
-          Delivery Date
-          <input type="number" />
-        </label>
+      <div className="label-input">
+        <div className="flex flex-col">
+          <label>Delivery Date</label>
+          <input type="date" placeholder="" />
+        </div>
       </div>
     </div>
   );

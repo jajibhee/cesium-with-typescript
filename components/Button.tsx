@@ -7,7 +7,9 @@ type ButtonProps = {
 };
 const Button: React.FC<ButtonProps> = ({ route, name, color = "bg-red" }) => {
   return (
-    <button className="hover:bg-blue-400 group flex items-center rounded-md bg-blue-500 text-white text-sm font-medium pl-2 pr-3 py-2 shadow-sm">
+    <button
+      className={`hover:bg-gray-400 group flex items-center rounded-md ${color} text-white text-lg font-medium pl-2 px-4 py-8 mr-2 shadow-sm`}
+    >
       <svg
         width="20"
         height="20"

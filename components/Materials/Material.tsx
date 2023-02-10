@@ -1,21 +1,20 @@
 import React from "react";
+import { Materials } from "../../interfaces";
 
-type MaterialProps = {
-  colorName?: string;
-  materialName?: string;
-  volume?: number;
-};
-const Material: React.FC<MaterialProps> = ({
-  colorName = "red",
-  materialName,
-  volume,
-}) => {
+const Material = (props) => {
   return (
-    <div className="flex justify-center">
-      <div className={`material-color ${colorName}`}></div>
-      <div className="flex flex-col">
-        <p>{materialName}</p>
-        <p>{volume} (m3)</p>
+    // <div key={props?.id} className="material-content flex justify-center">
+    //   <div className={`material-color ${props?.color}`}></div>
+    //   <div className="material-content__child flex flex-col">
+    //     <p>{props?.name}</p>
+    //     <p>{props?.volume} (m3)</p>
+    //   </div>
+    // </div>
+    <div key={props?.id} className="material-content">
+      <div className={`material-color bg-yellow-500`}></div>
+      <div className="material-content__child flex flex-col">
+        <p>Sand</p>
+        <p>101,223 (m3)</p>
       </div>
     </div>
   );

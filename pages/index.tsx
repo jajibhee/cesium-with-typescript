@@ -10,10 +10,8 @@ type MaterialsProps = {
 };
 
 const IndexPage = ({ items }: MaterialsProps) => {
-  console.log(items, "items");
-
   return (
-    <Layout title="Home | Next.js + TypeScript Example">
+    <Layout items={items} title="Home | Next.js + TypeScript Example">
       <MaterialsPage items={items} />
     </Layout>
   );

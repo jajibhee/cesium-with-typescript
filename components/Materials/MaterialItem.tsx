@@ -8,9 +8,9 @@ type Props = {
 };
 
 const MaterialItem = ({ data }: Props) => (
-  <Link href={`/materials/${data.id}`} as={`/materials/${data.id}`}>
-    <Material />
-  </Link>
+  <div>
+    <Material props={data} />
+  </div>
 );
 
 export default MaterialItem;

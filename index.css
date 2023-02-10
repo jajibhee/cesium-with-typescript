@@ -2,34 +2,105 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "NotoSans";
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "NotoSans-Bold";
+  font-size: 16px;
+  font-weight: 700;
+  color: #fffff !important;
+}
+label {
+  opacity: 1;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: "NotoSans-Bold";
+  font-size: 18px !important;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  font-size: 1.5rem;
+}
+input[type="text"],
+input[type="name"],
+input[type="number"],
+input[type="date"],
+textarea {
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  width: 400px;
+  background-color: #565664;
+}
+
+.label-input {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 main {
   background-color: #29292f;
   padding: 2rem 3rem;
 }
+
 .layout {
   height: 100vh;
   display: grid;
   column-gap: 3rem;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 300px 900px;
   grid-template-areas:
     "sidepane content"
     "sidepane content";
 }
 
 .sidepane {
+  height: 50vh;
+
   background-color: #17171a;
   border: 1px solid #565664;
   grid-area: sidepane;
 }
 
 .content {
+  height: 50vh;
+  /* padding: 0 1rem; */
   grid-area: content;
   background-color: #1d1d21;
   border-radius: 5px;
   box-shadow: gray;
 }
+.content-materials {
+  margin-left: 2rem;
+}
+
+.material-content {
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+}
 .material-color {
   border-radius: 100%;
-  width: 10px;
-  height: 10px;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+button {
+  /* width: 9rem !important; */
+  padding: 1rem !important;
+  border-radius: 2rem !important;
+  font-size: 1rem;
+}
+
+material-content__child {
+  text-align: left;
 }
